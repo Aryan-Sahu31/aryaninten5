@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA fallback is also written directly into dist/_redirects by build.js,
+# so this works whether Netlify builds from source or you drag-and-drop
+# an already-built dist folder.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
