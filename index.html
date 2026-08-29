@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="NOVA — premium futuristic commerce experience">
+<meta name="theme-color" content="#070910">
+<title>NOVA — Future Objects</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="ambient ambient-1"></div><div class="ambient ambient-2"></div>
+<div class="grain"></div>
+
+<header class="header" id="header">
+  <a class="brand" href="#/home">
+    <span class="brand-mark"><i></i><i></i><i></i></span>
+    <span><b>NOVA</b><small>FUTURE OBJECTS</small></span>
+  </a>
+
+  <nav class="nav" id="nav">
+    <a href="#/home">Home</a>
+    <a href="#/shop">Collection</a>
+    <a href="#/about">Studio</a>
+  </nav>
+
+  <div class="header-tools">
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+    <button class="bag-btn" id="cartBtn">Bag <span id="cartCount">0</span></button>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<div class="toast" id="toast" role="status"></div>
+
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="drawer-top">
+    <div><small>YOUR SELECTION</small><h2>Shopping bag</h2></div>
+    <button class="icon-btn" id="closeCart">×</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="drawer-bottom">
+    <div class="subtotal"><span>Subtotal</span><strong id="cartTotal">$0</strong></div>
+    <button class="checkout-btn" id="checkoutBtn">Continue to checkout <span>→</span></button>
+    <small class="secure-note">◇ Secure checkout · Demo environment</small>
+  </div>
+</aside>
+
+<div class="modal" id="productModal" aria-hidden="true">
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
